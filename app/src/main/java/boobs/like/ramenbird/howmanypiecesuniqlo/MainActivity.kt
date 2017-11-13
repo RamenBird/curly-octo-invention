@@ -1,18 +1,33 @@
-package boobs.like.ramenbirds.howmanypiecesuniqlo
+package boobs.like.ramenbird.howmanypiecesuniqlo
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
-import boobs.like.ramenbird.howmanypiecesuniqlo.datatype.Piece
-import kotlinx.android.synthetic.main.activity_main.*
+import android.support.v7.app.AppCompatActivity
+import android.view.Menu
+import android.view.MenuItem
+import boobs.like.ramenbirds.howmanypiecesuniqlo.R
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
 
-        var piece = Piece(null, )
-        piece.tag1
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        if (menu != null) {
+            menuInflater.inflate(R.menu.aaa, menu)
+        }
+
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item?.itemId) {
+            R.id.add -> {
+                AddDialog().show(fragmentManager, "add")
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
     }
 }
