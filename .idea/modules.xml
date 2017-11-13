@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HowManyPiecesUniqlo.iml" filepath="$PROJECT_DIR$/HowManyPiecesUniqlo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/curly-octo-invention.iml" filepath="$PROJECT_DIR$/curly-octo-invention.iml" />
     </modules>
   </component>
 </project>
